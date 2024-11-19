@@ -1,0 +1,120 @@
+body {
+    font-family: 'Times New Roman', serif;
+    background: url('e.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Styling for the A2J Education title */
+h2 {
+    font-family: 'Impact', sans-serif;
+    color: white;
+    font-size: 38px;
+   -webkit-text-stroke-width: 1px ;
+    -webkit-text-stroke-color: black;
+    margin-bottom: 20px; /* Space between title and main heading */
+}
+
+/* Styling for the main heading */
+h1 {
+    font-family: 'Showcard Gothic', sans-serif;
+    color: yellow;
+    font-size: 50px;
+    font-weight: bold;
+    -webkit-text-stroke-width: 1px ;
+    -webkit-text-stroke-color: black;
+    margin-bottom: 30px; /* Space between heading and buttons */
+}
+
+/* Centering the form */
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form input fields */
+input, select {
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+}
+
+/* Button for forms */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    width: 260px;
+    margin-top: 15px;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Response message styling */
+.response-message {
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Success message */
+.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+/* Error message */
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Adjusting the layout for smaller screens */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    form {
+        width: 100%;
+        padding: 15px;
+    }
+    input, select, button {
+        width: 100%;
+    }
+}
